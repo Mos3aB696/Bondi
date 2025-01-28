@@ -220,6 +220,12 @@ body {
   list-style: none;
   padding-bottom: 0.5rem;
 }
+.footer a.me {
+  color: var(--main-color);
+  text-decoration: none;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 2s infinite ease-in-out;
+}
 .footer .copyright .name {
   color: var(--main-color);
 }
@@ -239,3 +245,24 @@ body {
   background-color: #ff0000;
 }
 /* End Footer */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  40% {
+    opacity: 0.4;
+  }
+  60% {
+    opacity: 0.6;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}
